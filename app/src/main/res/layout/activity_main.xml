@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/btn"
+            android:background="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="꧁记事本꧂"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="144dp"/>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_y="?attr/actionBarSize"
+            android:divider="@color/item2"
+            android:dividerHeight="1dp"
+            android:fadeScrollbars="true"
+            android:listSelector="@drawable/list_item_view"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_centerInParent="true"
+        />
+</AbsoluteLayout>

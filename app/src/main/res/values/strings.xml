@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MarkApp</string>
+    <string name="add_mark">添加内容</string>
+</resources>
